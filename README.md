@@ -69,3 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+# TODOs:
+- add more ways to create splash screen view (via nib file, using .png file)
+- local/push notifications and launchOptions handling using Incubators pattern
+- unit tests
