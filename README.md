@@ -22,7 +22,7 @@ It's your choice how to interpret these words.
 
 > 1. With BlockOperation
 
-```
+```swift 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 > 2. With separated Operatation/Operations
 
-```
+```swift 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -86,7 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 > 3. You can also create own SplashViewController using DKExtendedSplashViewControllerProtocol (All methods below have default implementation):
-```
+```swift
     /**
      Reference to application window.
      */
