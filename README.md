@@ -12,7 +12,7 @@ We need to have AB Tests on the very first screen of the app so configuration sh
 
 It's your choice how to interpret these words. 
 1. Just follow the rules (https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/launch-screen/) and you'll be fine. 
-2. Don't hold user on the launch screen for more than 2-3 seconds more (in extreme cases more max 10 seconds). During that time you can download remote configuration, make database migration and take one sip of a coffee. And user will have full working app after that. 
+2. Don't hold user on the launch screen for more than 2-3 seconds more (in extreme cases max 10 seconds). During that time you can download remote configuration, make database migration and take one sip of a coffee. And user will have full working app after that. 
 3. Be smart. As Facebook currently does make sure that your extended splash view is different than a default launch screen. 
 4. Regarding Apple words I do agree completly. But "I can't change the direction of the wind, but I can adjust my sails to always reach my destination."
 
