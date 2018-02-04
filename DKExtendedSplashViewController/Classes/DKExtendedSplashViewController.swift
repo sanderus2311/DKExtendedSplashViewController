@@ -5,7 +5,6 @@ public class DKExtendedSplashViewController: UIViewController, DKExtendedSplashV
         static let errorSplashViewNotExists: String = "DKExtendedSplashViewController: view is not initialized!"
     }
     private var extendedSplashView: UIView?
-    
     public weak var rootWindow: UIWindow?
     public let targettedViewController: UIViewController
     

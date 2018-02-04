@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5072DB6B202743D4000AE242 /* DKExtendedSplashQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DB6A202743D4000AE242 /* DKExtendedSplashQueueManager.swift */; };
 		5072DB6D202743FD000AE242 /* DKExtendedSplashViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DB6C202743FD000AE242 /* DKExtendedSplashViewControllerProtocol.swift */; };
+		5072DB73202785E3000AE242 /* DKExtendedSplashQueueManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072DB72202785E3000AE242 /* DKExtendedSplashQueueManagerTests.swift */; };
 		50FD23ED202742210045D3A0 /* DKExtendedSplashViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD23E3202742210045D3A0 /* DKExtendedSplashViewController.framework */; };
-		50FD23F2202742210045D3A0 /* DKExtendedSplashViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD23F1202742210045D3A0 /* DKExtendedSplashViewControllerTests.swift */; };
 		50FD23F4202742210045D3A0 /* DKExtendedSplashViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FD23E6202742210045D3A0 /* DKExtendedSplashViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50FD23FE2027426E0045D3A0 /* DKExtendedSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD23FD2027426E0045D3A0 /* DKExtendedSplashViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,11 +28,11 @@
 /* Begin PBXFileReference section */
 		5072DB6A202743D4000AE242 /* DKExtendedSplashQueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKExtendedSplashQueueManager.swift; sourceTree = "<group>"; };
 		5072DB6C202743FD000AE242 /* DKExtendedSplashViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKExtendedSplashViewControllerProtocol.swift; sourceTree = "<group>"; };
+		5072DB72202785E3000AE242 /* DKExtendedSplashQueueManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKExtendedSplashQueueManagerTests.swift; sourceTree = "<group>"; };
 		50FD23E3202742210045D3A0 /* DKExtendedSplashViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DKExtendedSplashViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FD23E6202742210045D3A0 /* DKExtendedSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKExtendedSplashViewController.h; sourceTree = "<group>"; };
 		50FD23E7202742210045D3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50FD23EC202742210045D3A0 /* DKExtendedSplashViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKExtendedSplashViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50FD23F1202742210045D3A0 /* DKExtendedSplashViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKExtendedSplashViewControllerTests.swift; sourceTree = "<group>"; };
 		50FD23F3202742210045D3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50FD23FD2027426E0045D3A0 /* DKExtendedSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKExtendedSplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,8 +113,8 @@
 		50FD23F0202742210045D3A0 /* DKExtendedSplashViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				50FD23F1202742210045D3A0 /* DKExtendedSplashViewControllerTests.swift */,
 				50FD23F3202742210045D3A0 /* Info.plist */,
+				5072DB72202785E3000AE242 /* DKExtendedSplashQueueManagerTests.swift */,
 			);
 			path = DKExtendedSplashViewControllerTests;
 			sourceTree = "<group>";
@@ -186,6 +186,7 @@
 					};
 					50FD23EB202742210045D3A0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -240,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50FD23F2202742210045D3A0 /* DKExtendedSplashViewControllerTests.swift in Sources */,
+				5072DB73202785E3000AE242 /* DKExtendedSplashQueueManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,12 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79X9RA79Q5;
 				INFOPLIST_FILE = DKExtendedSplashViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = softouls.DKExtendedSplashViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79X9RA79Q5;
 				INFOPLIST_FILE = DKExtendedSplashViewControllerTests/Info.plist;

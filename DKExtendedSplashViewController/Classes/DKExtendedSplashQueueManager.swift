@@ -8,11 +8,17 @@ internal class DKExtendedSplashQueueManager {
     private let operationQueue: OperationQueue
     private let allOperationsFinishedCallback: (() -> ())
     
-    internal init(with allOperationsFinishedCallback: @escaping ()->()) {
+    internal init(with allOperationsFinishedCallback: @escaping ()->(), in operationQueue: OperationQueue) {
         self.allOperationsFinishedCallback = allOperationsFinishedCallback
-        
-        operationQueue = OperationQueue()
+        self.operationQueue = operationQueue
+    }
+    
+    internal convenience init(with allOperationsFinishedCallback: @escaping ()->()) {
+        let operationQueue = OperationQueue()
         operationQueue.name = Constants.queueName
+        
+        self.init(with: allOperationsFinishedCallback,
+                  in: operationQueue)
     }
     
     internal func addOperations(_ operations: [Operation]) {
