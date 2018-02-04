@@ -85,6 +85,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+> 3. You can also create own SplashViewController using DKExtendedSplashViewControllerProtocol (All methods below have default implementation):
+```
+    /**
+     Reference to application window.
+     */
+    var rootWindow: UIWindow? { get }
+    
+    /**
+     Reference to viewController object which will be presented after splash screen.
+     */
+    var targettedViewController: UIViewController { get }
+    
+    /**
+     Method to invoke initialization using DKExtendedSplashQueueManager.
+     
+     - parameter operation: Operation which should be called during initialization.
+     */
+    func startInitialization(with operation: Operation)
+    
+    /**
+     Method to invoke initialization using DKExtendedSplashQueueManager.
+     
+     - parameter operations: Operations which should be called during initialization.
+     */
+    func startInitialization(with operations: [Operation])
+    
+    /**
+     Method to invoke initialization using DKExtendedSplashQueueManager.
+     
+     - parameter blockOperation: BlockOperation which should be called during initialization.
+     */
+    func startInitialization(with blockOperation: BlockOperation)
+    
+    /**
+     Method to change rootViewController in rootWindow to desired targettedViewController.
+     */
+    func setTargettedViewControllerAsRootViewController()
+    
+    /**
+     Method to change rootViewController in rootWindow to DKExtendedSplashViewController.
+     */
+    func setExtendedSplashAsRootViewController()
+```
+
 # TODOs:
 - add more ways to create splash screen view (via nib file, using .png file)
 - local/push notifications and launchOptions handling using Incubators pattern
