@@ -18,18 +18,18 @@ Pod::Spec.new do |s|
   s.name         = "DKExtendedSplashViewController"
   s.version      = "0.1"
   s.summary      = "DKExtendedSplashViewController is used to give you more time to initialization during launch app"
-
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+
+DKExtendedSplashViewController is used to give you more time to initialization during launch app //TODO: TBD
+
                    DESC
 
-  s.homepage     = "http://EXAMPLE/DKExtendedSplashViewController"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
+  s.homepage     = "https://github.com/sanderus2311/DKExtendedSplashViewController"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -39,8 +39,26 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => 'MIT', :text => <<-LICENSE
+    ermission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+    LICENSE
+  }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -53,9 +71,6 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "dkoncewicz" => "dawid.koncewicz@yahoo.com" }
-  # Or just: s.author    = "dkoncewicz"
-  # s.authors            = { "dkoncewicz" => "dawid.koncewicz@yahoo.com" }
-  # s.social_media_url   = "http://twitter.com/dkoncewicz"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -63,14 +78,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "10.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
+  s.platform     = :ios
+  s.platform     = :ios, "10.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +88,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/sanderus2311/DKExtendedSplashViewController", :tag => "0.1" }
+  s.source       = { :git => "https://github.com/sanderus2311/DKExtendedSplashViewController.git", :tag => "0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,6 +100,5 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "DKExtendedSplashViewController", "DKExtendedSplashViewController/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
 
 end
